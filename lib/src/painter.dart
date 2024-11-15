@@ -60,7 +60,7 @@ class ConvexPainter extends CustomPainter {
         Rect.fromLTWH(size.width * percent - width / 2, top, width, height);
     _gradient.updateWith(_paint, size: host);
     var path = _shape.getOuterPath(host, guest);
-    canvas.drawPath(path, _shadowPaint);
+    //canvas.drawPath(path, _shadowPaint);
     canvas.drawPath(path, _paint);
   }
 
